@@ -90,3 +90,8 @@ span.text{
         font-size: 1.5em;
     }
 }
+
+.h1{
+    font-size: 30px;
+    text-align: center;
+}
