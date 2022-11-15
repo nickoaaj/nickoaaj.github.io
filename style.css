@@ -193,12 +193,12 @@ section{
 
 @keyframes  animate-path1{
     100%{
-    stroke-dashoffset: 450;
+    stroke-dashoffset: 400;
     }
 }
 @keyframes  animate-path2{
     100%{
-    stroke-dashoffset: 50;
+    stroke-dashoffset: 100;
     }
 }
 @keyframes  animate-path3{
