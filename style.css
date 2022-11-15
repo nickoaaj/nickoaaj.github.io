@@ -256,14 +256,15 @@ section{
     transition-property: box-shadow, transform;
 }
 
-.btn{
-    position: absolute;
-    right: 10px;
-    top: 610px;
-}
-
 .btn:hover, .btn:focus, .btn:active{
     box-shadow: 0 0 20px rgba(0,0,0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+.btn{
+    position: absolute;
+    right: 10px;
+    top: 300px;
+}
+
