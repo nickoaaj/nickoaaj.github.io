@@ -235,36 +235,58 @@ section{
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
-
-.btn{
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #129cff;
-    width: 160px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.btn:hover, .btn:focus, .btn:active{
-    box-shadow: 0 0 20px rgba(0,0,0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.btn{
+button{
+    width: 185px;
+    height: 27px;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    top: 7px;
+    bottom: 0;
+    left: 80;
+    right: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.05);
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 10px;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+button:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(
+        45deg,
+        transparent 50%,
+        rgba(255,255,255,0.03) 58%,
+          rgba(255,255,255,0.16) 67%,
+        transparent 68%
+    );
+    background-size: 200% 100%;
+    background-position: 165% 0;
+    transition: 0.7s;
+}
+button:hover:after{
+    background-position: -20% 0;
+}
+button:hover{
+    box-shadow: 15px 30px 32px rgba(0,0,0,0.25);
+    transform: translateY(-10px);
 }
 
