@@ -1,63 +1,30 @@
-<!--codingmaker-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About me.</title>
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <section>
-       <div class="container">
-           
-
-        <h1 class="heading">My relationship with her.</h1>
-           <div class="horizontal-bars">
-               <div class="bar">
-                   <div class="info">
-                       <span>Crush</span>
-                   </div>
-                   <div class="progress-line html">
-                       <span></span>
-                   </div>
-               </div>
-               <div class="bar">
-                   <div class="info">
-                       <span>Strangers</span>
-                   </div>
-                   <div class="progress-line css">
-                       <span></span>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-       <div class="container">
-           <h1 class="heading">About me.</h1>
-           <div class="radial-bars">
-
-            <div class="radial-bar">
-                   <svg x="0px" y="0px" viewBox="0 0 200 200">
-                       <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                       <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                   </svg>
-                   <div class="percentage">30%</div>
-                   <div class="text">Motivation</div>
-               </div>
-
-               <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">70%</div>
-                <div class="text">Discipline</div>
-            </div>
+    <div class="countdown">
+        <div class="box">
+            <span class="num" id="day-box">00</span>
+            <span class="text">Days</span>
+        </div>
+        <div class="box">
+            <span class="num" id="hr-box">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div class="box">
+            <span class="num" id="min-box">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div class="box">
+            <span class="num" id="sec-box">00</span>
+            <span class="text">Seconds</span>
+        </div>
     </div>
-</div>
-</section>
-<a href="https://nickoaaj.github.io/card/">
-    <button>NEXT PAGE</button>
-</a>
+    <script src="script.js"></script>
 </body>
 </html>
